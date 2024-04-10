@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/databaseConnect";
 import productRoutes from "./routes/productRoutes";
+import userRoutes from "./routes/userRoutes";
 
 const HOST = process.env.SERVER_HOST;
 const PORT = process.env.SERVER_PORT;
@@ -21,4 +22,5 @@ app.get(["/", "/api"], (req, res) => {
   res.send("Products E-Commerce Backend API");
 });
 
+app.use("/api/user", userRoutes);
 app.use("/api/products", productRoutes);
