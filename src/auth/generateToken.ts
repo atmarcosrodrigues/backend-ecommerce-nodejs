@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import IUser from "../types/user";
+import IUser from "../types/User";
 import { JWT } from "../config/auth";
 
 const generateToken = (user: IUser) => {
