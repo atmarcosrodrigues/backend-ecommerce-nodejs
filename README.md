@@ -19,4 +19,4 @@ JWT_SECRET=12345-YOUR-SCECRET-KEY
 
 3.  `npm i`
 4.  `npm run data:populate`
-5.  `npm run dev`
+5.  `npm run start`
