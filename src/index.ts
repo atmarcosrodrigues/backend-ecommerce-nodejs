@@ -2,8 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/databaseConnect";
-import productRoutes from "./routes/productRoutes";
-import userRoutes from "./routes/userRoutes";
+import { cartRoutes, productRoutes, userRoutes } from "./routes";
 
 const HOST = process.env.SERVER_HOST;
 const PORT = process.env.SERVER_PORT;
@@ -24,3 +23,4 @@ app.get(["/", "/api"], (req, res) => {
 
 app.use("/api/user", userRoutes);
 app.use("/api/products", productRoutes);
+app.use("/api/cart", cartRoutes);

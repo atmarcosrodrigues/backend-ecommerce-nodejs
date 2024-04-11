@@ -3,9 +3,24 @@ export const loginSuccess = {
   MESSAGE: "User sucessfully logged in.",
 };
 
+export const getCartProductSuccess = {
+  CODE: 200,
+  MESSAGE: "OK",
+};
+
+export const deleteCartProductSuccess = {
+  CODE: 200,
+  MESSAGE: "Sucessfully product deleted",
+};
+
 export const createAccountSuccess = {
   CODE: 201,
   MESSAGE: "Sucessfully account opened",
+};
+
+export const addCartProductSuccess = {
+  CODE: 201,
+  MESSAGE: "Sucessfully product added",
 };
 
 export const invalidRequest = {
@@ -22,6 +37,7 @@ export const unauthorizedUser = {
   CODE: 401,
   MESSAGE: "Unauthorized user. You have to Sign up first!",
 };
+
 export const internalServeError = {
   CODE: 500,
   MESSAGE: "Something wrong please try again.",
